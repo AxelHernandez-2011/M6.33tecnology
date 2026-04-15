@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Industrias - m6.33 Technology</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<nav>
+  <div class="logo"><img src="imagenes/logo4.png" alt="m6.33 logo"></div>
+  <div class="menu" id="menu">
+    <a href="index.html">Inicio</a>
+    <a href="soluciones.html">Soluciones</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="industrias.html" class="active">Industrias</a>
+    <a href="academy.html">Academy</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="casos.html">Casos de Éxito</a>
+    <a href="blog.html">Blog</a>
+  </div>
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav>
+
+<section class="hero hero-minimal">
+  <div class="hero-copy">
+    <p class="eyebrow">Industrias</p>
+    <h1 class="title">Prueba de concepto real en sectores clave.</h1>
+    <p class="subtitle">Aplicamos tecnología específica para retail, salud, construcción, educación y automotriz.</p>
+  </div>
+</section>
+
+<section class="fade">
+  <h2 class="section-title">Retail & Consumo Masivo</h2>
+  <div class="card">
+    <p>Optimización de datos a escala regional con integridad de información en operaciones multi-país.</p>
+    <p>Caso de éxito: Cencosud Latam.</p>
+  </div>
+</section>
+
+<section class="fade">
+  <h2 class="section-title">Medical Tech & Salud</h2>
+  <div class="card">
+    <p>Desarrollo de software bajo estándares globales y coordinación de células de trabajo internacionales.</p>
+    <p>Caso de éxito: Zimmer Biomet Chile-India.</p>
+  </div>
+</section>
+
+<section class="fade">
+  <h2 class="section-title">Construcción e Inmobiliaria</h2>
+  <div class="card">
+    <p>Digitalizamos el control de obra: de la bitácora de papel al ERP en tiempo real.</p>
+    <p>Solución: AlConstructor.</p>
+  </div>
+</section>
+
+<section class="fade">
+  <h2 class="section-title">Educación y Clubes</h2>
+  <div class="card">
+    <p>Automatizamos procesos administrativos y pagos con tecnología escalable.</p>
+    <p>Solución: AlPago.</p>
+  </div>
+</section>
+
+<section class="fade">
+  <h2 class="section-title">Automotriz</h2>
+  <div class="card">
+    <p>Implementamos sistemas ERP y diagramación de procesos UML para alta manufactura.</p>
+  </div>
+</section>
+
+<footer class="footer">
+  © 2026 m6.33 Technology — Ingeniería con Propósito
+</footer>
+
+<script>
+const hamburger = document.getElementById('hamburger');
+const menu = document.getElementById('menu');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  menu.classList.toggle('active');
+});
+
+menu.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    menu.classList.remove('active');
+  });
+});
+</script>
+</body>
+</html>

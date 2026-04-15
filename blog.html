@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog / Insights - m6.33 Technology</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<nav>
+  <div class="logo"><img src="imagenes/logo4.png" alt="m6.33 logo"></div>
+  <div class="menu" id="menu">
+    <a href="index.html">Inicio</a>
+    <a href="soluciones.html">Soluciones</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="industrias.html">Industrias</a>
+    <a href="academy.html">Academy</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="casos.html">Casos de Éxito</a>
+    <a href="blog.html" class="active">Blog</a>
+  </div>
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav>
+
+<section class="hero hero-minimal">
+  <div class="hero-copy">
+    <p class="eyebrow">Blog / Insights</p>
+    <h1 class="title">Ideas y análisis sobre IA, Blockchain y transformación digital.</h1>
+    <p class="subtitle">Encuentra contenido pensado para líderes que buscan tecnología con propósito.</p>
+  </div>
+</section>
+
+<section class="fade">
+  <h2 class="section-title">Últimos artículos</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>IA lista para tu equipo</h3>
+      <p>Cómo entrenar capacidades internas para aplicar IA en productividad financiera.</p>
+    </div>
+    <div class="card">
+      <h3>Blockchain en la cadena de suministro</h3>
+      <p>Casos prácticos para garantizar trazabilidad e integridad de datos críticos.</p>
+    </div>
+    <div class="card">
+      <h3>Transformación digital para Pymes</h3>
+      <p>Pasos claros para dar el salto sin complicar tu operación diaria.</p>
+    </div>
+  </div>
+</section>
+
+<section class="fade">
+  <h2 class="section-title">Suscríbete</h2>
+  <div class="card">
+    <p>Recibe insights periódicos sobre tecnología, procesos y estrategia digital para empresas en crecimiento.</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-links">
+    <a href="index.html">Portal de clientes</a>
+    <a href="blog.html">Blog de Innovación</a>
+    <a href="blog.html">Aviso de Privacidad</a>
+    <a href="https://wa.me/525512345678" target="_blank">WhatsApp Business</a>
+  </div>
+  <p>© 2026 m6.33 Technology — Ingeniería con Propósito</p>
+</footer>
+
+<script>
+const hamburger = document.getElementById('hamburger');
+const menu = document.getElementById('menu');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  menu.classList.toggle('active');
+});
+
+menu.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    menu.classList.remove('active');
+  });
+});
+</script>
+</body>
+</html>

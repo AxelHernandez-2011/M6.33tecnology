@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>m6.33 Technology</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo">
+    <img src="imagenes/logo7.png" alt="m6.33 logo">
+  </div>
+  <div class="menu" id="menu">
+    <a href="index.html" class="active">Inicio</a>
+    <a href="soluciones.html">Soluciones</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="industrias.html">Industrias</a>
+    <a href="academy.html">Academy</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="casos.html">Casos de Éxito</a>
+    <a href="blog.html">Blog</a>
+  </div>
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-copy">
+    <div class="hero-brand">
+      <img src="imagenes/logo7.png" alt="m6.33 logo">
+      <h1>Tecnología con propósito</h1>
+    </div>
+    <p class="subtitle">Soluciones digitales que impulsan el crecimiento sostenible de tu negocio.</p>
+    <p class="eyebrow">En M6.33 Technology transformamos la forma en que trabajas, tomas decisiones y haces crecer tu empresa.</p>
+    <div class="hero-actions">
+      <a href="index.html#contacto" class="btn cta">Solicitar demo</a>
+      <a href="soluciones.html" class="btn secondary">Conocer soluciones</a>
+    </div>
+  </div>
+</section>
+
+<section class="fade section-why">
+  <h2 class="section-title">¿Por qué M6.33?</h2>
+  <p class="section-note">Somos el aliado tecnológico que aporta claridad, soporte y soluciones escalables para empresas que buscan resultados medibles.</p>
+  <div class="grid">
+    <div class="card">
+      <h3>10+ años de experiencia</h3>
+      <p>Hemos acompañado a empresas y consultorios con soluciones tecnológicas prácticas y efectivas.</p>
+    </div>
+    <div class="card">
+      <h3>Presencia en México y Chile</h3>
+      <p>Operamos en Latinoamérica con foco en resultados y soporte cercano para cada cliente.</p>
+    </div>
+    <div class="card">
+      <h3>Resultados reales</h3>
+      <p>Integramos Data Science, SAP y Blockchain para reducir riesgos y mejorar la toma de decisiones.</p>
+    </div>
+  </div>
+</section>
+
+<section class="fade section-areas">
+  <h2 class="section-title">Áreas clave</h2>
+  <p class="section-note">Nuestro enfoque combina software, procesos y tecnología para dar a tu empresa una base sólida y escalable.</p>
+  <div class="grid">
+    <div class="card">
+      <h3>Software</h3>
+      <p>Desarrollamos soluciones digitales que automatizan procesos, mejoran la productividad y entregan datos accionables.</p>
+    </div>
+    <div class="card">
+      <h3>SAP & Procesos</h3>
+      <p>Integramos SAP con ingeniería de procesos para optimizar la operación y reducir costos operativos.</p>
+    </div>
+    <div class="card">
+      <h3>Infraestructura</h3>
+      <p>Equipamos tu empresa con hardware confiable, soporte técnico permanente y mantenimiento preventivo.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contacto" class="fade contact-section">
+  <h2 class="section-title">Contáctanos</h2>
+  <p class="subtitle">¿Listo para avanzar con tecnología que realmente funciona? Escríbenos y te ayudamos a dimensionar tu proyecto.</p>
+  <div class="contact-grid">
+    <div class="contact-panel">
+      <div class="contact-card">
+        <h3>Atención estratégica</h3>
+        <p>Recibimos tu consulta con análisis inmediato y propuestas alineadas a tus objetivos de negocio.</p>
+      </div>
+      <div class="contact-card">
+        <h3>Soluciones claras</h3>
+        <p>Impulsamos proyectos con entregables definidos, integración segura y soporte continuo.</p>
+      </div>
+    </div>
+    <form action="#" method="post" class="contact-form">
+      <div class="form-group">
+        <label for="name">Nombre</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Correo Electrónico</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Mensaje</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn">Enviar mensaje</button>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-links">
+    <a href="index.html">Portal de clientes</a>
+    <a href="blog.html">Blog de Innovación</a>
+    <a href="blog.html">Aviso de Privacidad</a>
+    <a href="https://wa.me/525512345678" target="_blank">WhatsApp Business</a>
+  </div>
+  <p>© 2026 m6.33 Technology — Ingeniería con Propósito</p>
+</footer>
+
+<!-- SCRIPTS -->
+<script>
+const hamburger = document.getElementById('hamburger');
+const menu = document.getElementById('menu');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  menu.classList.toggle('active');
+});
+
+menu.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    menu.classList.remove('active');
+  });
+});
+
+const elements = document.querySelectorAll('.fade');
+window.addEventListener('scroll', () => {
+  elements.forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if(rect.top < window.innerHeight - 100){
+      el.classList.add('show');
+    }
+  });
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Soluciones - m6.33 Technology</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<nav>
+  <div class="logo"><img src="imagenes/logo4.png" alt="m6.33 logo"></div>
+  <div class="menu" id="menu">
+    <a href="index.html">Inicio</a>
+    <a href="soluciones.html" class="active">Soluciones</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="industrias.html">Industrias</a>
+    <a href="academy.html">Academy</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="casos.html">Casos de Éxito</a>
+    <a href="blog.html">Blog</a>
+  </div>
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav>
+
+<section class="hero hero-minimal">
+  <div class="hero-copy">
+    <p class="eyebrow">Soluciones “Al”</p>
+    <h1 class="title">Ecosistema diseñado para automatizar y controlar tu operación.</h1>
+    <p class="subtitle">Desde cobranza inteligente hasta ERP de obra y producción, nuestras plataformas entregan visibilidad, trazabilidad y toma de decisiones rápida.</p>
+    <div class="hero-actions">
+      <a href="index.html#contacto" class="btn cta">Solicitar Demo</a>
+      <a href="servicios.html" class="btn secondary">Ver Servicios</a>
+    </div>
+  </div>
+</section>
+
+<section class="fade">
+  <h2 class="section-title">AlPago</h2>
+  <div class="card">
+    <p>Automatiza la cobranza inteligente para escuelas y clubes. Gestiona membresías, cartera vencida, recordatorios y conciliación bancaria con dashboards de salud financiera.</p>
+    <a href="index.html#contacto" class="btn">Solicitar Demo</a>
+  </div>
+</section>
+
+<section class="fade">
+  <h2 class="section-title">AlCobro</h2>
+  <div class="card">
+    <p>Gestión de órdenes de compra y cuentas por cobrar con trazabilidad total, aprobación de gastos y control de proveedores.</p>
+    <a href="index.html#contacto" class="btn">Solicitar Demo</a>
+  </div>
+</section>
+
+<section class="fade">
+  <h2 class="section-title">AlConstructor</h2>
+  <div class="card">
+    <p>ERP especializado para control de obra, presupuestos y recursos en tiempo real con seguimiento de costos por etapa.</p>
+    <a href="index.html#contacto" class="btn">Solicitar Demo</a>
+  </div>
+</section>
+
+<section class="fade">
+  <h2 class="section-title">AlFabricantes</h2>
+  <div class="card">
+    <p>Control de piso de producción y seguimiento de eficiencia operativa para optimizar procesos industriales.</p>
+    <a href="index.html#contacto" class="btn">Solicitar Demo</a>
+  </div>
+</section>
+
+<section class="fade">
+  <h2 class="section-title">Alamedida</h2>
+  <div class="card">
+    <p>Células de desarrollo para proyectos únicos en Web & Mobile, con soluciones tecnológicas hechas a la medida.</p>
+    <a href="index.html#contacto" class="btn">Solicitar Demo</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-links">
+    <a href="index.html">Portal de clientes</a>
+    <a href="blog.html">Blog de Innovación</a>
+    <a href="blog.html">Aviso de Privacidad</a>
+    <a href="https://wa.me/525512345678" target="_blank">WhatsApp Business</a>
+  </div>
+  <p>© 2026 m6.33 Technology — Ingeniería con Propósito</p>
+</footer>
+
+<script>
+const hamburger = document.getElementById('hamburger');
+const menu = document.getElementById('menu');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  menu.classList.toggle('active');
+});
+
+menu.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    menu.classList.remove('active');
+  });
+});
+</script>
+</body>
+</html>
+

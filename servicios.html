@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Servicios - m6.33 Technology</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<nav>
+  <div class="logo"><img src="imagenes/logo4.png" alt="m6.33 logo"></div>
+  <div class="menu" id="menu">
+    <a href="index.html">Inicio</a>
+    <a href="soluciones.html">Soluciones</a>
+    <a href="servicios.html" class="active">Servicios</a>
+    <a href="industrias.html">Industrias</a>
+    <a href="academy.html">Academy</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="casos.html">Casos de Éxito</a>
+    <a href="blog.html">Blog</a>
+  </div>
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav>
+
+<section class="hero hero-minimal">
+  <div class="hero-copy">
+    <p class="eyebrow">Ingeniería de Soluciones</p>
+    <h1 class="title">Servicios que convierten tecnología en crecimiento.</h1>
+    <p class="subtitle">Diseñamos, implementamos y damos soporte a soluciones completas para software, infraestructura, datos y negocio digital.</p>
+    <div class="hero-actions">
+      <a href="index.html#contacto" class="btn cta">Solicitar Demo</a>
+      <a href="academy.html" class="btn secondary">Ver Academy</a>
+    </div>
+  </div>
+</section>
+
+<section class="fade">
+  <h2 class="section-title">Desarrollo de Software a la Medida</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Aplicaciones móviles y web administrables</h3>
+      <p>Soluciones digitales hechas a la medida para capturar, automatizar y escalar tus procesos.</p>
+    </div>
+    <div class="card">
+      <h3>Sistemas en la nube y servicios web</h3>
+      <p>Diseñamos plataformas seguras y conectadas para operar de manera eficiente desde cualquier lugar.</p>
+    </div>
+  </div>
+</section>
+
+<section class="fade">
+  <h2 class="section-title">Infraestructura y Soporte</h2>
+  <div class="card">
+    <p>Venta de hardware, mantenimiento preventivo/correctivo y soporte técnico especializado para empresas y consultorios.</p>
+    <p>Equipamos tu visión: hardware e infraestructura que soporta el crecimiento de tu equipo.</p>
+  </div>
+</section>
+
+<section class="fade">
+  <h2 class="section-title">Presencia Digital</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Diseño y desarrollo web</h3>
+      <p>Páginas web y experiencias multimedia alineadas con tu marca y objetivos comerciales.</p>
+    </div>
+    <div class="card">
+      <h3>Data Science & BI</h3>
+      <p>Tableros con Power BI y análisis predictivo para decisiones basadas en datos.</p>
+    </div>
+  </div>
+</section>
+
+<section class="fade">
+  <h2 class="section-title">Ejemplo de BI</h2>
+  <div class="card">
+    <p>Tablero de control que predice las ventas del próximo mes basándose en el histórico de los últimos 3 años, con métricas clave para monitorear desempeño y riesgos.</p>
+  </div>
+</section>
+
+<section class="fade">
+  <h2 class="section-title">Blockchain para Supply Chain</h2>
+  <div class="card">
+    <p>Implementación de redes blockchain para la trazabilidad de productos críticos, asegurando que cada nodo de la cadena sea inmutable y transparente.</p>
+  </div>
+</section>
+
+<section class="fade">
+  <h2 class="section-title">Arquitectura de Datos</h2>
+  <div class="card">
+    <p>Transformamos bases de datos complejas (PostgreSQL/MySQL) en tableros de control que predicen tendencias y reducen riesgos financieros.</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-links">
+    <a href="index.html">Portal de clientes</a>
+    <a href="blog.html">Blog de Innovación</a>
+    <a href="blog.html">Aviso de Privacidad</a>
+    <a href="https://wa.me/525512345678" target="_blank">WhatsApp Business</a>
+  </div>
+  <p>© 2026 m6.33 Technology — Ingeniería con Propósito</p>
+</footer>
+
+<script>
+const hamburger = document.getElementById('hamburger');
+const menu = document.getElementById('menu');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  menu.classList.toggle('active');
+});
+
+menu.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    menu.classList.remove('active');
+  });
+});
+</script>
+</body>
+</html>
+

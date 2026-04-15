@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nosotros - m6.33 Technology</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<nav>
+  <div class="logo"><img src="imagenes/logo4.png" alt="m6.33 logo"></div>
+  <div class="menu" id="menu">
+    <a href="index.html">Inicio</a>
+    <a href="soluciones.html">Soluciones</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="industrias.html">Industrias</a>
+    <a href="academy.html">Academy</a>
+    <a href="nosotros.html" class="active">Nosotros</a>
+    <a href="casos.html">Casos de Éxito</a>
+    <a href="blog.html">Blog</a>
+  </div>
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav>
+
+<section class="hero hero-minimal">
+  <div class="hero-copy">
+    <p class="eyebrow">Quiénes somos</p>
+    <h1 class="title">M6.33 Technology — Tecnología con propósito</h1>
+    <p class="subtitle">Unimos tecnología y personas para entregar soluciones prácticas, accesibles y sostenibles que mejoran los negocios y la forma de trabajar.</p>
+  </div>
+</section>
+
+<section class="fade">
+  <h2 class="section-title">Nuestra historia</h2>
+  <div class="card">
+    <p>M6.33 Technology representa la unión de tecnología y personas con un propósito claro: ayudar a los negocios y profesionistas a usar tecnología de forma práctica y útil. Diseñamos e implementamos soluciones digitales completas, como sistemas en la nube, herramientas inteligentes que analizan información, y soporte de equipos e infraestructura.</p>
+    <p>Nuestro trabajo no solo es instalar tecnología, sino acompañar y capacitar a las personas, para que puedan mejorar sus procesos, tomar mejores decisiones y hacer crecer su negocio.</p>
+    <p>Creemos en la tecnología con propósito enfocado, accesible y sostenible, que realmente genere valor y esté al alcance de más empresas.</p>
+  </div>
+</section>
+
+<section class="fade">
+  <h2 class="section-title">Misión</h2>
+  <div class="card">
+    <p>Ayudar a las empresas a mejorar y crecer usando la tecnología de manera práctica y con propósito, ofreciendo soluciones completas en la nube, herramientas inteligentes, infraestructura y capacitación.</p>
+  </div>
+</section>
+
+<section class="fade">
+  <h2 class="section-title">Visión</h2>
+  <div class="card">
+    <p>Ser una empresa reconocida en México y Latinoamérica por apoyar a los negocios y profesionistas en su transformación digital, usando tecnología simple, confiable y responsable, que genere un impacto positivo y esté al alcance de micro, pequeñas y medianas empresas.</p>
+  </div>
+</section>
+
+<section class="fade">
+  <h2 class="section-title">Valores</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Tecnología con propósito</h3>
+      <p>Usamos la tecnología para resolver problemas reales y mejorar la forma en que trabajan las personas y las empresas.</p>
+    </div>
+    <div class="card">
+      <h3>Innovación práctica</h3>
+      <p>Creamos soluciones útiles, sencillas y enfocadas en resultados.</p>
+    </div>
+    <div class="card">
+      <h3>Compromiso con el cliente</h3>
+      <p>Acompañamos a nuestros clientes desde la implementación hasta el uso diario.</p>
+    </div>
+    <div class="card">
+      <h3>Transparencia y confianza</h3>
+      <p>Trabajamos con honestidad, claridad y responsabilidad.</p>
+    </div>
+    <div class="card">
+      <h3>Aprendizaje continuo</h3>
+      <p>Capacitamos para que la tecnología funcione y genere valor.</p>
+    </div>
+    <div class="card">
+      <h3>Crecimiento sostenible</h3>
+      <p>Desarrollamos soluciones que crecen junto con nuestros clientes.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-links">
+    <a href="index.html">Portal de clientes</a>
+    <a href="blog.html">Blog de Innovación</a>
+    <a href="blog.html">Aviso de Privacidad</a>
+    <a href="https://wa.me/525512345678" target="_blank">WhatsApp Business</a>
+  </div>
+  <p>© 2026 m6.33 Technology — Ingeniería con Propósito</p>
+</footer>
+
+<script>
+const hamburger = document.getElementById('hamburger');
+const menu = document.getElementById('menu');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  menu.classList.toggle('active');
+});
+
+menu.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    menu.classList.remove('active');
+  });
+});
+</script>
+</body>
+</html>
+

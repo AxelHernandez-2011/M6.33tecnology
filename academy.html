@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Academy - m6.33 Technology</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<nav>
+  <div class="logo"><img src="imagenes/logo4.png" alt="m6.33 logo"></div>
+  <div class="menu" id="menu">
+    <a href="index.html">Inicio</a>
+    <a href="soluciones.html">Soluciones</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="industrias.html">Industrias</a>
+    <a href="academy.html" class="active">Academy</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="casos.html">Casos de Éxito</a>
+    <a href="blog.html">Blog</a>
+  </div>
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav>
+
+<section class="hero hero-minimal">
+  <div class="hero-copy">
+    <p class="eyebrow">Academy</p>
+    <h1 class="title">Formación para talento digital y equipos listos para el futuro.</h1>
+    <p class="subtitle">Capacitamos profesionales en herramientas y metodologías que aceleran transformación y productividad.</p>
+    <div class="hero-actions">
+      <a href="index.html#contacto" class="btn cta">Solicitar Demo</a>
+      <a href="nosotros.html" class="btn secondary">Conocer Más</a>
+    </div>
+  </div>
+</section>
+
+<section class="fade">
+  <h2 class="section-title">Programas principales</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Bootcamp Alumni Hub</h3>
+      <p>Formamos el talento que el mercado exige, con más de 200 profesionales capacitados en Ruby on Rails, React y Python.</p>
+    </div>
+    <div class="card">
+      <h3>IA Readiness Program</h3>
+      <p>No solo usamos IA, enseñamos a tu equipo a dominarla con cursos aplicados a productividad financiera y optimización de código.</p>
+    </div>
+  </div>
+</section>
+
+<section class="fade">
+  <h2 class="section-title">Capacitación corporativa</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Excel Profesional</h3>
+      <p>Macros, Power BI y automatización para equipos que necesitan resultados rápidos y precisos.</p>
+    </div>
+    <div class="card">
+      <h3>Transformación Digital In-Company</h3>
+      <p>Programas hechos a medida para mejorar procesos, colaboración y toma de decisiones.</p>
+    </div>
+  </div>
+</section>
+
+<section class="fade">
+  <h2 class="section-title">Cursos destacados</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Data Science & Analytics</h3>
+      <p>Python aplicado al análisis de datos y ciencia de datos.</p>
+      <p>Próxima fecha: 10 de mayo</p>
+    </div>
+    <div class="card">
+      <h3>IA para Programadores</h3>
+      <p>Optimización de flujos de trabajo con herramientas generativas.</p>
+      <p>Próxima fecha: 20 de mayo</p>
+    </div>
+    <div class="card">
+      <h3>IA para Finanzas</h3>
+      <p>Automatización de proyecciones y análisis de riesgos.</p>
+      <p>Próxima fecha: 5 de junio</p>
+    </div>
+    <div class="card">
+      <h3>Excel de 0 a Pro</h3>
+      <p>Desde tablas básicas hasta macros y Power Pivot.</p>
+      <p>Próxima fecha: 12 de junio</p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-links">
+    <a href="index.html">Portal de clientes</a>
+    <a href="blog.html">Blog de Innovación</a>
+    <a href="blog.html">Aviso de Privacidad</a>
+    <a href="https://wa.me/525512345678" target="_blank">WhatsApp Business</a>
+  </div>
+  <p>© 2026 m6.33 Technology — Ingeniería con Propósito</p>
+</footer>
+
+<script>
+const hamburger = document.getElementById('hamburger');
+const menu = document.getElementById('menu');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  menu.classList.toggle('active');
+});
+
+menu.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    menu.classList.remove('active');
+  });
+});
+</script>
+</body>
+</html>
+

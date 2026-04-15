@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Casos de Éxito - m6.33 Technology</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<nav>
+  <div class="logo"><img src="imagenes/logo4.png" alt="m6.33 logo"></div>
+  <div class="menu" id="menu">
+    <a href="index.html">Inicio</a>
+    <a href="soluciones.html">Soluciones</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="industrias.html">Industrias</a>
+    <a href="academy.html">Academy</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="casos.html" class="active">Casos de Éxito</a>
+    <a href="blog.html">Blog</a>
+  </div>
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav>
+
+<section class="hero hero-minimal">
+  <div class="hero-copy">
+    <p class="eyebrow">Casos de Éxito</p>
+    <h1 class="title">Resultados que ya generan valor.</h1>
+    <p class="subtitle">Experiencia regional en proyectos de retail, salud, construcción y supply chain.</p>
+  </div>
+</section>
+
+<section class="fade">
+  <h2 class="section-title">Retail Regional</h2>
+  <div class="card">
+    <p>Integridad de datos masivos en Argentina, Brasil, Chile, Colombia y Perú.</p>
+    <p>Caso: Cencosud.</p>
+  </div>
+</section>
+
+<section class="fade">
+  <h2 class="section-title">Medical Tech</h2>
+  <div class="card">
+    <p>Coordinación de equipos de desarrollo India-Chile para sistemas médicos críticos con altos estándares de calidad.</p>
+    <p>Caso: Zimmer Biomet.</p>
+  </div>
+</section>
+
+<section class="fade">
+  <h2 class="section-title">Coordinación Global</h2>
+  <div class="card">
+    <p>Experiencia liderando equipos internacionales con metodologías ágiles, Scrum y BPMN.</p>
+  </div>
+</section>
+
+<section class="fade">
+  <h2 class="section-title">Testimonio</h2>
+  <div class="card">
+    <p>“M6.33 no solo instaló software, redefinió nuestra forma de trabajar.” — Gerente de Operaciones</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-links">
+    <a href="index.html">Portal de clientes</a>
+    <a href="blog.html">Blog de Innovación</a>
+    <a href="blog.html">Aviso de Privacidad</a>
+    <a href="https://wa.me/525512345678" target="_blank">WhatsApp Business</a>
+  </div>
+  <p>© 2026 m6.33 Technology — Ingeniería con Propósito</p>
+</footer>
+
+<script>
+const hamburger = document.getElementById('hamburger');
+const menu = document.getElementById('menu');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  menu.classList.toggle('active');
+});
+
+menu.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    menu.classList.remove('active');
+  });
+});
+</script>
+</body>
+</html>
